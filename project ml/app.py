@@ -9,7 +9,7 @@ st.set_page_config(page_title="Spam Detector", page_icon="📧")
 st.title("📧 Spam Detector NLP App")
 
 # ====== MODEL PATH ======
-MODEL_PATH = r"C:\Users\dhara\Downloads\spam_nlp_model.pkl"
+MODEL_PATH = "spam_nlp_model.pkl"
 
 # ====== LOAD MODEL ======
 @st.cache_resource
@@ -49,4 +49,5 @@ if st.button("Check Spam"):
             st.success("HAM ✅")
         else:
             st.error("SPAM 🚫")
+
 
