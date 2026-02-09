@@ -60,7 +60,7 @@ y_pred = model.predict(X_test)
 print("Accuracy:", accuracy_score(y_test, y_pred))
 print("\nClassification Report:\n", classification_report(y_test, y_pred))
 
-save_path = r"C:\Users\dhara\OneDrive\Documents\DCK\news project\spam_nlp_model.pkl"
+save_path = "spam_nlp_model.pkl"
 
 joblib.dump(model, "spam_nlp_model.pkl")
 
